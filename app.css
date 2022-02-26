@@ -1,0 +1,55 @@
+#navbar {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  background-image: url(/台灣旅遊網站/logo/Group\ 139.png);
+  background-size: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.flower {
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 25px;
+  height: 90%;
+  width: 99%;
+  background-image: url(./台灣旅遊網站/pic/img_1.png);
+  z-index: 1;
+}
+
+.bottom, .middle, .above {
+  position: fixed;
+  width: 100%;
+  left: 0px; right: 0px;
+  z-index: -1;
+}
+
+.above {
+  bottom: 170px;
+  height: 100%;
+  /* background-image: url(./台灣旅遊網站/bg/Rectangle\ 147.png); */
+  background-color: #f7f0cd;
+}
+
+.middle {
+  bottom: 130px;
+  height: 40px;
+  /* background-image: url(./台灣旅遊網站/bg/Rectangle\ 148.png); */
+  background-color: #f3e89a;
+}
+
+.bottom {
+  bottom: 0px;
+  height: 130px;
+  /* background-image: url(./台灣旅遊網站/bg/Rectangle\ 155.png); */
+  background-color: #A0b34c;
+}
