@@ -1,4 +1,4 @@
-#navbar {
+/* #navbar, #search{
   display: flex;
   position: relative;
   z-index: 1;
@@ -12,44 +12,52 @@
   width: 100%;
   height: 50px;
   margin-left: 20px;
+  margin-top: 20px;
+} */
+
+body {
+  /* No white margin around the website */
+  margin: 0;
 }
 
-.flower {
+#pic {
   position: fixed;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  bottom: 25px;
+  bottom: -5px;
   height: 90%;
   width: 99%;
-  background-image: url(./台灣旅遊網站/pic/img_1.png);
+  background-image: url(/台灣旅遊網站/pic/img_1.png);
   z-index: 1;
 }
 
-.bottom, .middle, .above {
-  position: fixed;
+#bgImage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
-  left: 0px; right: 0px;
+  position: fixed;
   z-index: -1;
 }
 
+/* .bottom, .middle, .above {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+} */
+
 .above {
-  bottom: 170px;
-  height: 100%;
-  /* background-image: url(./台灣旅遊網站/bg/Rectangle\ 147.png); */
-  background-color: #f7f0cd;
+  flex: 73;
+  background-color: #fcf9f4;
 }
 
 .middle {
-  bottom: 130px;
-  height: 40px;
-  /* background-image: url(./台灣旅遊網站/bg/Rectangle\ 148.png); */
-  background-color: #f3e89a;
+  flex: 5;
+  background-color: #f7f0cd;
 }
 
 .bottom {
-  bottom: 0px;
-  height: 130px;
-  /* background-image: url(./台灣旅遊網站/bg/Rectangle\ 155.png); */
+  flex: 22;
   background-color: #A0b34c;
 }
