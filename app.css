@@ -5,7 +5,7 @@
 }
 
 .logo {
-  background-image: url(/台灣旅遊網站/logo/Group\ 139.png);
+  background-image: url(/src/logo/Group\ 139.png);
   background-size: 100%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -18,18 +18,93 @@
 body {
   /* No white margin around the website */
   margin: 0;
+  cursor: url(/src/cursor/Ellipse\ 17.png), auto;
+}
+
+#bar, #navbar, #menu{
+  position: fixed;
+  max-width: 30em;
+  width:100%;
+  line-height: 0;
+  padding: 5px 0;
+  height: 5em;
+  top: 20em;
+}
+
+#bar {
+  line-height: 0;
+  height: 5em;
+  top : 20em;
+  padding: 5px 0;
+}
+
+.search, .translate{
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height:20px;
+  width: 10em;
+  top: 15px;
+  background-size: contain;
+}
+.search{
+  background-image: url(./src/menu/search.svg);
+  position: fixed; 
+  right: 15em;
+}
+.translate{
+  background-image: url(./src/menu/Group\ 144.png);
+  position:fixed;
+  right: 5em;
+}
+
+.logo, .attraction, .hotel, .toursit, .informaiton, .contact {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 30px;
+  background-size: contain;
+}
+
+.logo {
+  background-image: url(./src/logo/Group\ 139.png);
+  position: fixed;
+  width: 8em;
+  height: 5em;
+  left: 80px;
+  top: 2em;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  background-image: url(./src/menu/Group\ 165.png);
+  position: fixed;
+  width: 6em;
+  height: 80px;
+  right: 7em;
+  top: 40px;
+  background-repeat: no-repeat;
+}
+
+.informaiton {
+  background-image: url(./src/menu/Group\ 164.png);
+  position: fixed;
+  width: 6em;
+  height: 80px;
+  
 }
 
 #pic {
-  position: fixed;
-  background-size: contain;
+  display: cover;
+  position: relative;
+  width: 100%;
+  top: 70px;
+  height: 680px;
+
+  background-image: url(/src/pic/img_1.png);
+  background-size: 97% 95%;
   background-repeat: no-repeat;
   background-position: center;
-  bottom: -5px;
-  height: 90%;
-  width: 99%;
-  background-image: url(/台灣旅遊網站/pic/img_1.png);
-  z-index: 1;
 }
 
 #bgImage {
@@ -40,12 +115,6 @@ body {
   position: fixed;
   z-index: -1;
 }
-
-/* .bottom, .middle, .above {
-  position: fixed;
-  width: 100%;
-  z-index: -1;
-} */
 
 .above {
   flex: 73;
