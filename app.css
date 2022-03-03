@@ -1,25 +1,10 @@
-/* #navbar, #search{
-  display: flex;
-  position: relative;
-  z-index: 1;
-}
-
-.logo {
-  background-image: url(/src/logo/Group\ 139.png);
-  background-size: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 50px;
-  margin-left: 20px;
-  margin-top: 20px;
-} */
-
 body {
   /* No white margin around the website */
   margin: 0;
   width: 100%;
   cursor: url(/src/cursor/Ellipse\ 17.png), auto;
+  /* 先套用 Noto Sans TC 這個 思源黑體 */
+  font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 }
 
 #bar, #navbar, #menu{
@@ -62,14 +47,14 @@ body {
 }
 
 #menu {
-  display: flex;
+  display: block;
   height: 100%;
   width: 100%;
   position: fixed;
   
 }
 
-.logo, .attraction, .hotel, .toursit, .informaiton, .contact {
+.logo, .attraction, .hotel, .tourist, .information, .contact {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -85,50 +70,173 @@ body {
   top: 2em;
 }
 
+.logo:hover {
+  opacity: 0.5;
+}
+
+.attraction:hover {
+  background-image: url(./src/menu/Group\ 167.png);
+}
+
+.hotel:hover {
+  background-image: url(./src/menu/Group\ 168.png);
+}
+
+.tourist:hover {
+  background-image: url(./src/menu/Group\ 169.png);
+}
+
+.information:hover {
+  background-image: url(./src/menu/Group\ 170.png);
+}
+
+.contact:hover {
+  background-image: url(./src/menu/Group\ 171.png);
+}
+
 .attraction {
   background-image: url(./src/menu/Group\ 161.png);
-  width: 6em;
+  width: 5em;
   height: 80px;
   right: 40em;
-  top: 40px;
+  top: 38px;
+}
+
+.line {
+  background-image: url(./src/menu/Line\ 49.png);
+  background-size: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 7px;
+  height: 30px;
+  top: 3.5em;
+}
+
+.one {
+  left: 57.3em;
+}
+
+.two {
+  left: 65.3em;
+}
+
+.three {
+  left: 74.2em;
+}
+
+.four {
+  left: 82.3em;
 }
 
 .hotel {
   background-image: url(./src/menu/Group\ 162.png);
-  width: 6em;
+  width: 5em;
   height: 80px;
-  right: 29em;
-  top: 40px;
+  right: 32em;
+  top: 38px;
 }
 
-.toursit {
+.tourist {
   background-image: url(./src/menu/Group\ 163.png);
   width: 6em;
   height: 80px;
-  right: 29em;
-  top: 40px;
+  right: 23em;
+  top: 38px;
+}
+
+.information {
+  background-image: url(./src/menu/Group\ 164.png);
+  width: 5em;
+  height: 80px;
+  right: 15em;
+  top: 38px;
 }
 
 .contact {
   background-image: url(./src/menu/Group\ 165.png);
-  width: 6em;
+  width: 5em;
   height: 80px;
   right: 7em;
-  top: 40px;
+  top: 38px;
 }
 
 #pic {
-  display: cover;
-  position: relative;
-  width: 100%;
-  top: 70px;
-  height: 680px;
-
-  background-image: url(/src/pic/img_1.png);
+  background-image: url(./src/pic/img_1.png);
   background-size: 97% 95%;
   background-repeat: no-repeat;
   background-position: center;
+
+  display: cover;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  top: 70px;
+  height: 680px;
 }
+
+#slogan{
+  background-image: url(./src/pic/Group_142.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18%;
+
+  display: block;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  top: 13em;
+}
+
+#newsContainer {
+  background-image: url(./src/news/Path\ 23.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  
+  position: fixed;
+  z-index: 1; 
+  width: 100%;
+  height: 5.5em;
+  bottom: 20px;
+}
+
+#newsIcon {
+  background-image: url(./src/news/Group\ 160.png);
+  background-repeat: no-repeat;
+  background-size: 85px;
+  background-position: center;
+
+  position: fixed;
+  z-index: 1; 
+  width: 71%;
+  height: 5.5em;
+  bottom: 23px;
+}
+
+.scroll {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: 'Noto Sans';
+  position:absolute;
+  width: 5em;
+  left: 2em;
+  top: 30em;
+  font-size: 17px;
+}
+
+.whileLine {
+  border-left: 2px solid rgb(255, 255, 255);
+  position:absolute;
+  width: 3em;
+  height: 4em;
+  left: 6.7em;
+  top: 36.5em;
+}
+
 
 #bgImage {
   display: flex;
@@ -152,4 +260,36 @@ body {
 .bottom {
   flex: 22;
   background-color: #A0b34c;
+}
+
+.marqee {
+	height: 3em;
+  top: 12px;
+	margin: 0 auto;
+	overflow: hidden; 
+	position: relative;
+}
+
+.marqee > ul {
+	padding-left: 0;
+	display: flex;
+	list-style-type: none;
+	animation: marqee 7s linear infinite;
+	position: absolute;
+}
+
+.marqee > ul > li {
+	white-space: nowrap;
+	margin-right: 2em;
+	font-weight: 600;
+  font-family: 'Noto Sans';
+  font-size: large;
+	color: #4b2929;
+}
+
+@keyframes marqee {
+  0% { margin-left: 40%; opacity: 1;}
+  50% { margin-left: 20%; }
+  80% { opacity: 1;}
+  100% { opacity: 0; }
 }
