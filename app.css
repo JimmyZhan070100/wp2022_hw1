@@ -18,6 +18,7 @@
 body {
   /* No white margin around the website */
   margin: 0;
+  width: 100%;
   cursor: url(/src/cursor/Ellipse\ 17.png), auto;
 }
 
@@ -41,57 +42,79 @@ body {
 .search, .translate{
   background-position: center;
   background-repeat: no-repeat;
-  display: inline-block;
+  background-size: contain;
+  
+  display: block;
+  position: fixed;
   height:20px;
   width: 10em;
   top: 15px;
-  background-size: contain;
+  
 }
 .search{
   background-image: url(./src/menu/search.svg);
-  position: fixed; 
   right: 15em;
 }
+
 .translate{
   background-image: url(./src/menu/Group\ 144.png);
-  position:fixed;
   right: 5em;
+}
+
+#menu {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  
 }
 
 .logo, .attraction, .hotel, .toursit, .informaiton, .contact {
   background-position: center;
   background-repeat: no-repeat;
-  display: inline-block;
-  height: 30px;
   background-size: contain;
+  display: block;
+  position: fixed;
 }
 
 .logo {
   background-image: url(./src/logo/Group\ 139.png);
-  position: fixed;
   width: 8em;
   height: 5em;
   left: 80px;
   top: 2em;
-  background-repeat: no-repeat;
+}
+
+.attraction {
+  background-image: url(./src/menu/Group\ 161.png);
+  width: 6em;
+  height: 80px;
+  right: 40em;
+  top: 40px;
+}
+
+.hotel {
+  background-image: url(./src/menu/Group\ 162.png);
+  width: 6em;
+  height: 80px;
+  right: 29em;
+  top: 40px;
+}
+
+.toursit {
+  background-image: url(./src/menu/Group\ 163.png);
+  width: 6em;
+  height: 80px;
+  right: 29em;
+  top: 40px;
 }
 
 .contact {
   background-image: url(./src/menu/Group\ 165.png);
-  position: fixed;
   width: 6em;
   height: 80px;
   right: 7em;
   top: 40px;
-  background-repeat: no-repeat;
-}
-
-.informaiton {
-  background-image: url(./src/menu/Group\ 164.png);
-  position: fixed;
-  width: 6em;
-  height: 80px;
-  
 }
 
 #pic {
