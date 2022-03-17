@@ -2,7 +2,7 @@ body {
   /* No white margin around the website */
   margin: 0;
   width: 100%;
-  cursor: url(/src/cursor/Ellipse\ 17.png), auto;
+  cursor: url(/src/cursor/Ellipse_17.png), auto;
   /* 先套用 Noto Sans TC 這個 思源黑體 */
   font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 }
@@ -162,7 +162,7 @@ body {
 }
 
 #pic {
-  background-image: url(./src/pic/img_1.png);
+  /* background-image: url(./src/pic/img_1.png); */
   background-size: 97% 95%;
   background-repeat: no-repeat;
   background-position: center;
@@ -264,6 +264,7 @@ body {
 
 .marqee {
 	height: 3em;
+  width: 500px;
   top: 12px;
 	margin: 0 auto;
 	overflow: hidden; 
@@ -274,7 +275,7 @@ body {
 	padding-left: 0;
 	display: flex;
 	list-style-type: none;
-	animation: marqee 7s linear infinite;
+	animation: marqee 10s linear infinite;
 	position: absolute;
 }
 
@@ -285,11 +286,27 @@ body {
   font-family: 'Noto Sans';
   font-size: large;
 	color: #4b2929;
+  overflow: hidden;
 }
 
 @keyframes marqee {
-  0% { margin-left: 40%; opacity: 1;}
-  50% { margin-left: 20%; }
-  80% { opacity: 1;}
-  100% { opacity: 0; }
+  0% { margin-left: 100%; opacity: 1;}
+  /* 50% { margin-left: 20%; } */
+  /* 80% { opacity: 1;} */
+  100% { opacity: 1; }
+}
+
+.fade {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
 }
